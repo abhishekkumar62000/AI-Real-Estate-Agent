@@ -1,5 +1,7 @@
 streamlit
 pydantic
-python-dotenv
-firecrawl
 agno
+firecrawl
+folium
+streamlit-folium
+pandas
