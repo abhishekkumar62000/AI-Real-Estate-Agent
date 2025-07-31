@@ -5,3 +5,4 @@ firecrawl
 folium
 streamlit-folium
 pandas
+openai
