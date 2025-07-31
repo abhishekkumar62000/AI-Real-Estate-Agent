@@ -7,7 +7,7 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
  
-# Load environment variables from .env file if it exists
+# Load environment variables from .env file if it exists 
 load_dotenv()
 
 class PropertyData(BaseModel):
