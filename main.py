@@ -5,7 +5,7 @@ from agno.models.openai import OpenAIChat
 from firecrawl import FirecrawlApp
 import streamlit as st 
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv 
  
 # Load environment variables from .env file if it exists 
 load_dotenv()
