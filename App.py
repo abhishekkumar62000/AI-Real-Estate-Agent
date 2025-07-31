@@ -95,8 +95,8 @@ import os
 from dotenv import load_dotenv
 import base64
 
-# Load environment variables from .env file if it exists
-load_dotenv()
+## Use Streamlit secrets for API keys (for Streamlit Cloud deployment)
+# Remove dotenv loading
 
 class PropertyData(BaseModel):
     """Schema for property data extraction"""
@@ -283,10 +283,10 @@ def main():
     # --- End Comparison Dashboard ---
     # ...existing code...
 
-    # Get API keys from environment variables
-    firecrawl_key = os.getenv("FIRECRAWL_API_KEY", "")
-    openai_key = os.getenv("OPENAI_API_KEY", "")
-    default_model = os.getenv("OPENAI_MODEL_ID", "gpt-3.5-turbo")
+    # Get API keys from Streamlit secrets
+    firecrawl_key = st.secrets.get("FIRECRAWL_API_KEY", "")
+    openai_key = st.secrets.get("OPENAI_API_KEY", "")
+    default_model = st.secrets.get("OPENAI_MODEL_ID", "gpt-3.5-turbo")
 
     # --- Sidebar Logo with Unique Style and Animation ---
     logo_path = os.path.join(os.path.dirname(__file__), "Logo.png")
