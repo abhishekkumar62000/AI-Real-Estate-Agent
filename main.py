@@ -2,7 +2,7 @@ from typing import Dict, List
 from pydantic import BaseModel, Field
 from agno.agent import Agent 
 from agno.models.openai import OpenAIChat
-from firecrawl import FirecrawlApp 
+from firecrawl import FirecrawlApp
 import streamlit as st 
 import os
 from dotenv import load_dotenv 
